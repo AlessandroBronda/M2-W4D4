@@ -1,0 +1,119 @@
+body{
+    
+    font-family: "Outfit", sans-serif; /* Applica il font Roboto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    
+}
+
+header{
+
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    background-color: rgba(97, 97, 97, 0.500);
+    letter-spacing: 5px;
+    backdrop-filter: blur(50px);
+  
+}
+
+main{
+    z-index: 19;
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 500px;
+    background-color: rgba(97, 97, 97, 0.500);
+    border-radius: 50px;
+    backdrop-filter: blur(50px);
+   
+}
+
+.maincont{
+    
+    display: flex;
+    flex-direction:  column;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+footer{
+
+    display: flex;
+    margin-top: 14%;
+    justify-content: center;
+    background-color: rgba(97, 97, 97, 0.500);
+    backdrop-filter: blur(50px);
+}
+
+.input{
+    border-radius: 10px;
+    width: 250px;
+    margin-top: -20px;
+    backdrop-filter: blur(50px);
+}
+
+.Output{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+    width: 50vh;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    backdrop-filter: blur(50px);
+}
+
+.blobouter{
+position: fixed;
+height: 100%;
+width: 100%;
+z-index: 0;
+inset: 0;
+margin: auto;
+filter: blur(150px);
+
+}
+
+.blobinner{
+    border-radius: 99999px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1000px;
+    overflow: hidden;
+    background-color: white;
+    transform: scale(.6);
+}
+
+.blob{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    margin: auto;
+    background: conic-gradient(red, orange, yellow, green, blue);
+    animation: spinBlob 8s linear infinite;
+}
+
+@keyframes spinBlob {
+    0%{
+        transform: rotate(0deg) scale(2);
+    }
+    100% {
+        transform: rotate(1turn) scale(2);
+    }
+}
